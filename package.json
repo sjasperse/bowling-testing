@@ -6,13 +6,19 @@
   "scripts": {
     "setup": "npm install",
     "start": "node src/index.js",
-    "test": "cucumber-js src/{,**/}*.feature --require src/{,**/}*.steps.js",
-    "testDetailed": "cucumber-js src/{,**/}*.feature --require src/{,**/}*.steps.js --format usage"
+    "test": "mocha src/{,**/}/*.tests.js",
+    "test-mutants": "stryker run"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "chai": "^4.2.0",
-    "cucumber": "^5.0.2"
+    "mocha": "^5.2.0",
+    "stryker": "^0.30.0",
+    "stryker-api": "^0.21.4",
+    "stryker-html-reporter": "^0.16.5",
+    "stryker-javascript-mutator": "^0.11.2",
+    "stryker-mocha-framework": "^0.12.5",
+    "stryker-mocha-runner": "^0.14.5"
   }
 }
