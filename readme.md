@@ -1,10 +1,10 @@
 # Bowling test example
-This example is a ten-pin bowling game, that doesn't work right yet, but the test framework for using mocha and stryker is there :-). Have fun!
+This is an example of an implementation of the rules of ten-pin bowling game, leveraging mutation testing for test coverage reporting.
 
 ## How do I do this?
-First, run the first time setup.
+First, install the dependencies.
 ```
-npm run setup
+npm install
 ```
 
 Now you can either run the program (`src/index.js)

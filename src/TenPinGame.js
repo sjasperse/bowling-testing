@@ -35,11 +35,11 @@ module.exports = function TenPinGame() {
   }
 
   // not sure how to test this yet.
-  // function bowl() {
-  //   const pinsKnockedDown = Math.floor(Math.random() * (pinsRemaining + 1));
+  function bowl() {
+    const pinsKnockedDown = Math.floor(Math.random() * (pinsRemaining + 1));
     
-  //   return bowledAndKnockedDown(pinsKnockedDown);
-  // }
+    return bowledAndKnockedDown(pinsKnockedDown);
+  }
 
   function bowledAndKnockedDown(pinsKnockedDown) {
     if (pinsKnockedDown > pinsRemaining) {
